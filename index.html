@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Review Byte - Color</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Say Hello!</h1>
+        </header>
+        <main>
+            <form id="form" action="./thank-you.html">
+
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email address" required>
+
+                <label>Needed Services</label>
+                <select name="services" required>
+                    <option class="default-select" value="" disabled selected hidden>Select Services</option>
+                    <option value="one">Service One</option>
+                </select>
+
+                <label>Budget</label>
+                <select name="budget" required>
+                    <option class="default-select" value="" disabled selected hidden>Select Budget</option>
+                    <option value="one">Budget One</option>
+                </select>
+
+                <label>Message</label>
+                <textarea placeholder="Your message here..."></textarea>
+
+                <div id="button-container">
+                    <button type="submit" value="Submit">Submit &#8594</button>
+                    <div id="pseudo">Submit &#8594</div>
+                </div>
+
+            </form>
+        </main>
+    </body>
+</html>

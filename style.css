@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html {
+    background-image: linear-gradient(to top right, #59BEDE, #CC3DF4);
+    height: 100vh;
+}
+
+body {
+    background-color: white;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgb(211, 211, 211);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+.groovy {
+    width: 200px;
+    display:block;
+    margin:auto;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input, select, textarea {
+    font-size: 1.2rem;
+    resize: none;
+    height: 60px;
+    padding: 10px 0 20px 10px;
+    border: none;
+    border-bottom: solid 3px #E7E7E7;
+    margin: 10px 0 40px 0;
+    font-weight: bold;
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+#button-container {
+    position: relative;
+    display: block;
+    height: 50px;
+}
+button, #pseudo {
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to left, #59BEDE, #CC3DF4);
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    transition-duration: 0.5s;
+    border: none;
+    box-shadow: 0 0 10px 2px rgb(216, 216, 216);
+    z-index: 100;
+}
+#pseudo {
+    z-index: 50;
+    background-image: linear-gradient(to right, #59BEDE, #CC3DF4);
+    font-weight: bold;
+}
+#pseudo:hover {
+    box-shadow: 0 0 10px 5px black;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+button:hover {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+
+::placeholder {
+    color: #D7D7D7;
+}
